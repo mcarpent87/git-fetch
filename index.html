@@ -13,17 +13,10 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-dark bg-primary">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Github Finder</a>
-        </div>
+          <p class="navbar-brand">Github Finder</p>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
 
@@ -32,29 +25,31 @@
       </div>
     </nav>
 
+    <!--Container for two search bars and results -->
   <div class="container">
     <div class="row">
-     <div class="col-md-6">
+     <div class="col-md-5">
         <div class="searchContaineruser">
-        <h1>Search Github Users</h1>
-        <p class="lead">Enter a username to fetch a users profile info and repos</p>
+        <h2>Search Github Users</h2>
+        <p class="lead">Enter a username to fetch a users profile and repos</p>
         <input type="text" id="searchUser" class="form-control" placeholder="Github Username...">
         </div>
         <br>
-        <div id="profile-user"></div>
+        <div id="user_profile"></div>
       </div>
-     </div>
-
-    <div class="col-md-6">
+    
+    <div class="col-md-1"></div>
+    
+    <div class="col-md-5">
         <div class="searchContainerorg">
-        <h1>Search Github Organizations</h1>
-        <p class="lead">Enter a username to fetch a users profile info and repos</p>
-        <input type="text" id="searchUser" class="form-control" placeholder="Github Org name...">
-    </div>
+        <h2>Search Github Orgs</h2>
+        <p class="lead">Enter an organization name to fetch public members</p>
+        <input type="text" id="searchOrgs" class="form-control" placeholder="Github Organization name...">
+        </div>
       <br>
-      <div id="profile-org"></div>
+      <div id="orgs_profile"></div>
     </div>
-
+  </div>
   </div>
   <!-- /.container -->
 
@@ -66,6 +61,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- Optional JavaScript -->
-    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
