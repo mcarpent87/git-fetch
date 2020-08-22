@@ -15,6 +15,8 @@ The organization name search interacts with the orgs endpoint in the Github API 
 * Node.js
 * NPM
 * live-server
+* [Register for client_id and client secret](https://github.com/settings/applications/new)
+  * Once you recieve a client_id and client_secret, create a .env file and paste them into it. 
 
 ### Installation
 
