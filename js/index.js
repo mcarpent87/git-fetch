@@ -25,8 +25,8 @@ $(document).ready(function(){
                     $('#repos').append(`
                         <div class="card">
                         <div class="row">
-                        <div class="col-md-5">
-                          <p  class="repo">${repo.name}</p>
+                        <div class="col-md-4">
+                          <a href="${repo.html_url}" target="_blank" class="repo">${repo.name}</p>
                         </div>
                         <div class="col-md-3">
                           <a href="${repo.html_url}/commits/master" target="_blank">See Commits</a>
@@ -137,8 +137,8 @@ $(document).ready(function(){
             </div>
             <h4 class="page-header">Public Members</h4>
             <table>
-                <th class="username">Username</th>
-                <th class="avitar">User Avitar</th>
+                <th class="un">Username</th>
+                <th class="ua">User Avatar</th>
             </table>
             <div id="orgs"></div>
         `);
