@@ -57,11 +57,11 @@ live-server
 
 ## Built With
 * Javascript
-* [jQuery](https://jquery.com/) - Javascript library used for AJAX API calls
+* [jQuery](https://jquery.com/) - Javascript library used for AJAX API calls, looping through arrays returned from the API, and generating HTML. 
 * HTML
-* CSS (Bootstrap and Bootswatch)
-* [Bootstrap] (getbootstrap.com) - CSS Framework
-* [Bootswatch] (bootswatch.com) - Themes for Bootstrap
+* CSS
+* [Bootstrap] (https://getbootstrap.com) - CSS Framework
+* [Bootswatch] (https://bootswatch.com) - Themes for Bootstrap
 * [Github REST API](https://developer.github.com/v3/) - User, Organization, and Member data grabbed from Github's REST API
 
 
