@@ -6,6 +6,8 @@ The username search interacts with the users endpoint in the Github API via an A
 
 The organization name search interacts with the orgs endpoint in the Github API via an AJAX call and returns organization profile information and a list of public members of the organization with their username (linked to their github profile) and avatar. 
 
+[See it in action](https://mcarpent87.github.io/git-fetch/)
+
 ## Getting Started
 
 1. Clone or download this repo to your local machine
