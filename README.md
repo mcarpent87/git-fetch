@@ -24,13 +24,15 @@ Give examples
 
 ### Installing
 
-After cloning or downloading the repository, open your terminal in your text editor of choice and change directory to where the project is living: 
+1. After cloning or downloading the repository, open your terminal in your text editor of choice and change directory to where the project is living: 
 
 ```
 cd <path-to-content>
 ```
 
-Install Node.js [Node.js](https://nodejs.org/en/download/)
+2. Install [Node.js (Latest LTS Version)](https://nodejs.org/en/download/)
+
+3. Check that Node.js and npm (installed alongside node) are on your machine by typing these two commands into your terminal:
 
 ```
 node -v
@@ -40,64 +42,38 @@ node -v
 npm -v
 ```
 
-And repeat
+4. Install [live-server](https://gist.github.com/donmccurdy/20fb112949324c92c5e8) by typing this in the command line:
 
 ```
 npm install -g live-server
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+5. Run this command to start the app and your browser should open a new tab at http://localhost:8080/: 
 
 ```
-Give an example
+live-server
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+## Search Users
+1. Start by typing a letter, user profiles will begin poping up as you type. You can enter whatever combination of letters you want and a user will pop up as long as that username exists. Or enter a specific username. 
+2. The users profile will appear and below that a list of all repositories the user has contributed to. 
+## Search Organization Members
+1. Enter an organization name, an organization that doesn't exist in the Github API will return null. 
+2. If a valid organization name is entered, profile information for the organization will pop up and a list of organization public members will appear. Click on a member username to view their github profile. 
 
 ## Built With
+* Javascript
+* [jQuery](https://jquery.com/) - Javascript library used for AJAX API calls
+* HTML
+* CSS (Bootstrap and Bootswatch)
+* [Bootstrap] (getbootstrap.com) - CSS Framework
+* [Bootswatch] (bootswatch.com) - Themes for Bootstrap
+* [Github REST API](https://developer.github.com/v3/) - User, Organization, and Member data grabbed from Github's REST API
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
+## To Do's:
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Introduce routing
+* Build using a framework or library (React, Django, Rails, etc.)
+* Display more information from API endpoints in user and orgs profile
+* Convert DT from messy format in API JSON into something more readable
