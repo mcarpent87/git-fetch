@@ -12,17 +12,11 @@ The organization name search interacts with the orgs endpoint in the Github API 
 
 ### Prerequisites
 
-Node.js
-NPM
-live-server
+* Node.js
+* NPM
+* live-server
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
+### Installation
 
 1. After cloning or downloading the repository, open your terminal in your text editor of choice and change directory to where the project is living: 
 
