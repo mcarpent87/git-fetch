@@ -26,10 +26,10 @@ $(document).ready(function(){
                         <div class="card">
                         <div class="row">
                         <div class="col-md-5">
-                          <a  class="repo" href="${repo.html_url}" target="_blank">${repo.name}</a>
+                          <p  class="repo">${repo.name}</p>
                         </div>
                         <div class="col-md-3">
-                          <a href="${repo.html_url}" target="_blank">See Commits</a>
+                          <a href="${repo.html_url}/commits/master" target="_blank">See Commits</a>
                         </div>
                         <div class="col-md-3">
                             <a href="${repo.updated_at}" target="_blank" class="btn btn-dark">${repo.updated_at}</a>
@@ -101,10 +101,10 @@ $(document).ready(function(){
                           <div class="container">
                           <div class="row">
                             <div class="col-md-6">
-                            <a class="member" href="${members.html_url}" target="_blank">${members.login}</a>
+                                <a class="member" href="${members.html_url}" target="_blank">${members.login}</a>
                             </div>
                             <div class="col-md-3">
-                            <img class="img-thumbnail avatar" src="${members.avatar_url}">
+                                <img class="img-thumbnail avatar" src="${members.avatar_url}">
                             </div>
                             <div class="col-md-3">
                             </div>
@@ -120,10 +120,10 @@ $(document).ready(function(){
             <div class="card-body">
                 <div class="row">
                 <div class="col-md-3">
-                <img class="img-thumbnail avatar" src="${orgs.avatar_url}">
+                    <img class="img-thumbnail avatar" src="${orgs.avatar_url}">
                 </div>
                 <div class="col-md-9">
-                <span class="badge badge-primary">Public Repos: ${orgs.public_repos}</span>
+                    <span class="badge badge-primary">Public Repos: ${orgs.public_repos}</span>
                 <br><br>
                 <ul class="list-group">
                     <li class="list-group-item">Website: <a href="${orgs.blog}" target="_blank">${orgs.blog}</a></li>
@@ -135,7 +135,11 @@ $(document).ready(function(){
                 </div>
             </div>
             </div>
-            <h3 class="page-header">Members</h3>
+            <h4 class="page-header">Public Members</h4>
+            <table>
+                <th class="username">Username</th>
+                <th class="avitar">User Avitar</th>
+            </table>
             <div id="orgs"></div>
         `);
         });
