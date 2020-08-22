@@ -24,9 +24,13 @@ Give examples
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+After cloning or downloading the repository, open your terminal in your text editor of choice and change directory to where the project is living: 
 
-Say what the step will be
+```
+cd <path-to-content>
+```
+
+Install Node.js [Node.js](https://nodejs.org/en/download/)
 
 ```
 node -v
@@ -39,7 +43,7 @@ npm -v
 And repeat
 
 ```
-npm install live-server
+npm install -g live-server
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
