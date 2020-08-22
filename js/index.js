@@ -11,8 +11,9 @@ $(document).ready(function(){
               client_secret:'e88cef00a224fd0ef6b9bfe9dbcc2effd6975024'
           }
         }).done(function(user){
+            console.log(user);
             $.ajax({
-                url:'https://api.github.com/users/'+username+'/repos',
+                url:'https://api.github.com/users/'+username+'/repos?q=commits>0',
                 data:{
                     client_id:'b7adc7a945e46b8b8e26',
                     client_secret:'e88cef00a224fd0ef6b9bfe9dbcc2effd6975024',
@@ -24,13 +25,13 @@ $(document).ready(function(){
                     $('#repos').append(`
                         <div class="card">
                         <div class="row">
-                        <div class="col-md-7">
-                          <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                        <div class="col-md-5">
+                          <a  class="repo" href="${repo.html_url}" target="_blank">${repo.name}</a>
                         </div>
                         <div class="col-md-3">
-                          <a href="${repo.commits_url}" target="_blank">See Commits</a>
+                          <a href="${repo.html_url}" target="_blank">See Commits</a>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <a href="${repo.updated_at}" target="_blank" class="btn btn-dark">${repo.updated_at}</a>
                         </div>
                         </div>
@@ -60,7 +61,12 @@ $(document).ready(function(){
                 </div>
             </div>
             </div>
-            <h3 class="page-header">Repositories</h3>
+            <h4 class="page-header">Repositories</h4>
+            <table>
+                <th class="rn">Repo Name</th>
+                <th class="com">Commits</th>
+                <th class="lu">Last updated</th>
+            </table>
             <div id="repos"></div>
         `);
         });
@@ -92,7 +98,8 @@ $(document).ready(function(){
                 $.each(members, function(index, members){
                     $('#orgs').append(`
                         <div class="card">
-                        <div class="row">
+                          <div class="container">
+                          <div class="row">
                             <div class="col-md-6">
                             <a class="member" href="${members.html_url}" target="_blank">${members.login}</a>
                             </div>
@@ -100,9 +107,9 @@ $(document).ready(function(){
                             <img class="img-thumbnail avatar" src="${members.avatar_url}">
                             </div>
                             <div class="col-md-3">
-                            
                             </div>
-                        </div>
+                            </div>
+                            </div>
                         </div>
                     `);
                 });

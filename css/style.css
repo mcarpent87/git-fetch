@@ -1,5 +1,18 @@
+.card {
+    padding: 10px;
+}
+
 .member {
    padding:20px;
+}
+
+.navbar-brand {
+    font-size: 60px;
+}
+
+.repo {
+    padding:10px; 
+    text-align: center; 
 }
 
 .container {
@@ -8,4 +21,20 @@
 
 .img-thumbnail {
      border-radius: 50%;
+     padding-bottom:5px;
+}
+
+.rn{
+    padding-left:20px; 
+    padding-bottom:5px;
+}
+
+.com{
+    padding-left:95px;
+    padding-bottom:5px;
+}
+
+.lu{
+    padding-left:80px;
+    padding-bottom:5px;
 }
