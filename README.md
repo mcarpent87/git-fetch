@@ -51,7 +51,10 @@ npm install -g live-server
 ```
 live-server
 ```
+## API Endpoints
+![Example of orgs/{:orgname}/public_members endpoint](https://octodex.github.com/images/yaktocat.png)
 
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 ## Search Users
 1. Start by typing a letter, user profiles will begin poping up as you type. You can enter whatever combination of letters you want and a user will pop up as long as that username exists. Or enter a specific username. 
 2. The users profile will appear and below that a list of all repositories the user has contributed to. 
@@ -71,7 +74,6 @@ live-server
 
 ## To Do's:
 
-* Introduce routing
-* Build using a framework or library (React, Django, Rails, etc.)
+* Implement pagination for search results
 * Display more information from API endpoints in user and orgs profile
 * Convert DT from messy format in API JSON into something more readable
