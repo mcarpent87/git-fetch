@@ -1,4 +1,4 @@
-# Git-Fetch
+# Github-Fetch
 
 A GUI that allows a user to interact with Github's REST API endpoints by searching for a username or an organization name. 
 
