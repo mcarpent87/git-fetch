@@ -17,8 +17,6 @@ The organization name search interacts with the orgs endpoint in the Github API 
 * Node.js
 * NPM
 * live-server
-* [Register for client_id and client secret](https://github.com/settings/applications/new)
-  * Once you recieve a client_id and client_secret, create a .env file and paste them into it. 
 
 ### Installation
 
@@ -52,9 +50,9 @@ npm install -g live-server
 live-server
 ```
 ## API Endpoints
-![Example of orgs/{:orgname}/public_members endpoint](https://octodex.github.com/images/yaktocat.png)
+![Example of orgs/{:orgname}/public_members endpoint](/img/API_1.jpeg)
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](/img/API_2.jpeg)
 ## Search Users
 1. Start by typing a letter, user profiles will begin poping up as you type. You can enter whatever combination of letters you want and a user will pop up as long as that username exists. Or enter a specific username. 
 2. The users profile will appear and below that a list of all repositories the user has contributed to. 
@@ -77,3 +75,4 @@ live-server
 * Implement pagination for search results
 * Display more information from API endpoints in user and orgs profile
 * Convert DT from messy format in API JSON into something more readable
+* Create .env file for API credentials
