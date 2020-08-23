@@ -2,40 +2,56 @@
     padding: 10px;
 }
 
-.member {
-   padding:20px;
-}
-
-.navbar-brand {
-    font-size: 60px;
-}
-
-.repo {
-    padding:10px; 
-    text-align: center; 
-}
-
 .container {
     margin-top:20px;
 }
 
+.navbar-brand {
+    font-family: 'Oleo Script', cursive;
+    font-size: 60px;
+}
+
+/* Styles for search results */
+.com{
+    padding-left:80px;
+    padding-bottom:5px;
+}
+
+.commits{
+    font-size:14px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.dt {
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+}
+
 .img-thumbnail {
-     border-radius: 50%;
-     padding-bottom:5px;
+    border-radius: 50%;
+    padding-bottom:5px;
+} 
+
+.lu{
+    padding-left:65px;
+    padding-bottom:5px;
+}
+
+.member {
+    font-weight:bold;
+    padding:20px;
+}
+
+.repo {
+    font-size:14px;
+    font-weight:bold;
+    padding:10px;
 }
 
 .rn{
     padding-left:20px; 
-    padding-bottom:5px;
-}
-
-.com{
-    padding-left:95px;
-    padding-bottom:5px;
-}
-
-.lu{
-    padding-left:80px;
     padding-bottom:5px;
 }
 
