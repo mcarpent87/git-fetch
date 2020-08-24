@@ -101,16 +101,16 @@ $(document).ready(function(){
             
         .done(function(members){
             //loop through each organization for members and append them in the orgs div
-            $.each(members, function(index, members){
+            $.each(members, function(index, member){
                 $('#orgs').append(`
                     <div class="card">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a class="member" href="${members.html_url}" target="_blank">${members.login}</a>
+                                    <a class="member" href="${member.html_url}" target="_blank">${member.login}</a>
                                 </div>
                                 <div class="col-md-3">
-                                    <img class="img-thumbnail avatar" src="${members.avatar_url}">
+                                    <img class="img-thumbnail avatar" src="${member.avatar_url}">
                                 </div>
                                 <div class="col-md-3">
                                 </div>
