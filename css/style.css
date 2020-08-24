@@ -30,16 +30,17 @@
 }
 
 .img-thumbnail {
-    border-radius: 50%;
     padding-bottom:5px;
+    border-radius: 50%;
 } 
 
 .lu{
-    padding-left:70px;
     padding-bottom:5px;
+    padding-left:70px;
 }
 
 .member {
+    font-size: 14px; 
     font-weight:bold;
     padding:20px;
 }

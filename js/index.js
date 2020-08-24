@@ -1,4 +1,4 @@
-//function where username is equal to users input in the search bar. API search based off of username entered by the user. 
+//jQuery function for grabbing data from Github API for a given user based off users search input
 $(document).ready(function(){
     $('#searchUser').on('keyup', function(e){
         let username = e.target.value;
@@ -74,7 +74,7 @@ $(document).ready(function(){
     });
 });
 
-//jQuery function for grabbing data from Github API for a given organization
+//jQuery function for grabbing data from Github API for a given organization based off users search input
 $(document).ready(function(){
     $('#searchOrgs').on('keyup', function(e){
         let orgname = e.target.value;
