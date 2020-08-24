@@ -27,7 +27,7 @@ $(document).ready(function(){
                                     <a class="repo" href="${repo.html_url}" target="_blank">${repo.name}</p>
                                 </div>
                                 <div class="col-md-3">
-                                    <a class="commits" href="${repo.html_url}/commits/master" target="_blank">See Commits</a>
+                                    <a class="commits" href="${repo.html_url}/commits" target="_blank">See Commits</a>
                                 </div>
                                 <div class="col-md-4">
                                     <p class="dt">${repo.updated_at}</p>
