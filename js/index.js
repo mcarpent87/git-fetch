@@ -89,7 +89,6 @@ $(document).ready(function(){
         })
         //Request for obtaining public members when searching for an organization sorted in ascending order
         .done(function(orgs){
-
             $.ajax({
                 url:'https://api.github.com/orgs/'+orgname+'/public_members',
                 data:{
@@ -97,9 +96,6 @@ $(document).ready(function(){
                     client_secret:'e88cef00a224fd0ef6b9bfe9dbcc2effd6975024',
                     dataType: 'jsonp',
                     sort: 'created: asc',
-                    success: function(orgsdata) {
-                        console.log(orgs);
-                    }
                 }
             })
             
